@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-16T14:05:31.364974" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Projetos\Front\Academy-Suits\tests\login.robot">
+<test id="s1-t1" name="Cenário de teste 1: Login" line="8">
+<kw name="Abrir o navegador" owner="recursos" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:05:31.560327" level="INFO">Opening browser 'headlesschrome' to base url 'None'.</msg>
+<arg>browser=headlesschrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-16T14:05:31.560327" elapsed="1.270262"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-16T14:05:32.831593" elapsed="0.021707"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:05:31.559321" elapsed="1.293979"/>
+</kw>
+<kw name="Acessar a página de login QaCodersAcademy" owner="recursos">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:05:32.853300" level="INFO">Opening url 'https://automacao.qacoders-academy.com.br/login'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-07-16T14:05:32.853300" elapsed="3.215985"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:05:32.853300" elapsed="3.215985"/>
+</kw>
+<kw name="Digitar um e-mail" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:05:36.070285" elapsed="0.038602"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:05:36.108887" level="INFO">Typing text 'sysadmin@qacoders.com' into text field '//input[contains(@type,'text')]'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=${emailLogin}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:05:36.108887" elapsed="0.163566"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:05:36.069285" elapsed="0.204195"/>
+</kw>
+<kw name="Digitar uma senha" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:05:36.273480" elapsed="0.017263"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:05:36.291750" level="INFO">Typing text '1234@Test' into text field '//input[contains(@type,'password')]'.</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>text=${passwordLogin}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:05:36.291750" elapsed="0.084702"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:05:36.273480" elapsed="0.102972"/>
+</kw>
+<kw name="Clicar em entrar" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${entrarButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:05:36.377457" elapsed="0.017881"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:05:36.396343" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedOrange MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedOrange MuiButton-sizeMedium MuiButton-containedSizeMedium css-ojf4v2'][contains(.,'Entrar')]'.</msg>
+<arg>locator=${entrarButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:05:36.395338" elapsed="0.074538"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-16T14:05:39.471037" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-16T14:05:36.469876" elapsed="3.001161"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:05:36.377457" elapsed="3.093580"/>
+</kw>
+<kw name="Fechar o navegador" owner="recursos" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-16T14:05:39.471037" elapsed="2.122933"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:05:39.471037" elapsed="2.122933"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:05:31.558328" elapsed="10.036661"/>
+</test>
+<test id="s1-t2" name="Cenário de teste 2: Login inválido" line="14">
+<kw name="Abrir o navegador" owner="recursos" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:05:41.596697" level="INFO">Opening browser 'headlesschrome' to base url 'None'.</msg>
+<arg>browser=headlesschrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-16T14:05:41.596697" elapsed="1.227382"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-16T14:05:42.824079" elapsed="0.035943"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:05:41.596697" elapsed="1.263325"/>
+</kw>
+<kw name="Acessar a página de login QaCodersAcademy" owner="recursos">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:05:42.861034" level="INFO">Opening url 'https://automacao.qacoders-academy.com.br/login'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-07-16T14:05:42.861034" elapsed="0.227684"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:05:42.861034" elapsed="0.227684"/>
+</kw>
+<kw name="Email inválido de login" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:05:43.089717" elapsed="0.044568"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:05:43.135287" level="INFO">Typing text 'email.com' into text field '//input[contains(@type,'text')]'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=email.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:05:43.135287" elapsed="0.142151"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:05:43.277438" elapsed="0.020282"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:05:43.297720" level="INFO">Typing password into text field '//input[contains(@type,'password')]'.</msg>
+<msg time="2024-07-16T14:05:43.331114" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>password=${passwordLogin}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:05:43.297720" elapsed="0.095252"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:05:43.491557" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-1.png"&gt;&lt;img src="selenium-element-screenshot-1.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>locator=${telaLogin}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-07-16T14:05:43.392972" elapsed="0.098585"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:05:43.089717" elapsed="0.401840"/>
+</kw>
+<kw name="Clicar em entrar" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${entrarButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:05:43.492556" elapsed="0.018723"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:05:43.511279" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedOrange MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedOrange MuiButton-sizeMedium MuiButton-containedSizeMedium css-ojf4v2'][contains(.,'Entrar')]'.</msg>
+<arg>locator=${entrarButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:05:43.511279" elapsed="0.077669"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-16T14:05:46.590562" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-16T14:05:43.590237" elapsed="3.000325"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:05:43.491557" elapsed="3.099005"/>
+</kw>
+<kw name="Fechar o navegador" owner="recursos" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-16T14:05:46.591592" elapsed="2.109178"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:05:46.591592" elapsed="2.109178"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:05:41.595692" elapsed="7.105078"/>
+</test>
+<status status="PASS" start="2024-07-16T14:05:31.365983" elapsed="17.336798"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-16T14:13:44.590314" rpa="false" schemaversion="5">
+<suite id="s1" name="Diretoria" source="C:\Projetos\Front\Academy-Suits\tests\diretoria.robot">
+<test id="s1-t1" name="Teste 1: Cadastro de diretoria" line="8">
+<kw name="Abrir o navegador" owner="recursos" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:13:44.798089" level="INFO">Opening browser 'headlesschrome' to base url 'None'.</msg>
+<arg>browser=headlesschrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-16T14:13:44.798089" elapsed="1.331788"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-16T14:13:46.129877" elapsed="0.037940"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:44.798089" elapsed="1.369728"/>
+</kw>
+<kw name="Acessar a página de login QaCodersAcademy" owner="recursos">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:13:46.168821" level="INFO">Opening url 'https://automacao.qacoders-academy.com.br/login'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-07-16T14:13:46.168821" elapsed="1.215895"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:46.167817" elapsed="1.216899"/>
+</kw>
+<kw name="Digitar um e-mail" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:13:47.385838" elapsed="0.040534"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:13:47.426372" level="INFO">Typing text 'sysadmin@qacoders.com' into text field '//input[contains(@type,'text')]'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=${emailLogin}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:13:47.426372" elapsed="0.165326"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:47.384716" elapsed="0.206982"/>
+</kw>
+<kw name="Digitar uma senha" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:13:47.591698" elapsed="0.018115"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:13:47.609813" level="INFO">Typing text '1234@Test' into text field '//input[contains(@type,'password')]'.</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>text=${passwordLogin}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:13:47.609813" elapsed="0.089178"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:47.591698" elapsed="0.107293"/>
+</kw>
+<kw name="Clicar em entrar" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${entrarButton}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:13:47.698991" elapsed="0.016667"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:13:47.715658" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedOrange MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedOrange MuiButton-sizeMedium MuiButton-containedSizeMedium css-ojf4v2'][contains(.,'Entrar')]'.</msg>
+<arg>locator=${entrarButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:13:47.715658" elapsed="0.074918"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-16T14:13:50.790950" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-16T14:13:47.790576" elapsed="3.000374"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:47.698991" elapsed="3.092179"/>
+</kw>
+<kw name="Clicar em cadastro" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${cadastros}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:13:50.791170" elapsed="4.838849"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:13:55.630019" level="INFO">Clicking element '//div[contains(@id,'Cadastros')]'.</msg>
+<arg>locator=${cadastros}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:13:55.630019" elapsed="0.045796"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:50.791170" elapsed="4.884645"/>
+</kw>
+<kw name="Clicar em diretorias" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${diretorias}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:13:55.675815" elapsed="0.016811"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:13:55.693630" level="INFO">Clicking element '//span[@class='MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-yb0lig'][contains(.,'Diretorias')]'.</msg>
+<arg>locator=${diretorias}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:13:55.693630" elapsed="0.057072"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:55.675815" elapsed="0.074887"/>
+</kw>
+<kw name="Clicar em novo cadastro" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${novoCadastroDiretoria}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:13:55.750702" elapsed="0.038345"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:13:55.790064" level="INFO">Clicking button '//button[@class='css-fvzsut'][contains(.,'Novo Cadastro')]'.</msg>
+<arg>locator=${novoCadastroDiretoria}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:13:55.790064" elapsed="0.068514"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:55.750702" elapsed="0.107876"/>
+</kw>
+<kw name="Digitar dados da diretoria" owner="recursos">
+<kw name="Generate Random String" owner="String">
+<msg time="2024-07-16T14:13:55.859584" level="INFO">${palavra_randomica} = HBKAXhzK</msg>
+<var>${palavra_randomica}</var>
+<arg>length=8</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-07-16T14:13:55.858578" elapsed="0.001006"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2024-07-16T14:13:55.859584" level="INFO">${palavra_randomica} = hbkaxhzk</msg>
+<var>${palavra_randomica}</var>
+<arg>${palavra_randomica}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2024-07-16T14:13:55.859584" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-07-16T14:13:55.860620" level="INFO">${board} = hbkaxhzk</msg>
+<arg>${board}</arg>
+<arg>${palavra_randomica}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-07-16T14:13:55.859584" elapsed="0.001036"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-07-16T14:13:55.860620" level="INFO">hbkaxhzk</msg>
+<arg>${board}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-07-16T14:13:55.860620" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${dadosDiretoria}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:13:55.860620" elapsed="0.022120"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:13:55.883739" level="INFO">Typing text 'hbkaxhzk' into text field '//input[contains(@class,'MuiInputBase-input MuiInput-input css-mnn31')]'.</msg>
+<arg>locator=${dadosDiretoria}</arg>
+<arg>text=${board}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:13:55.882740" elapsed="0.122058"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:55.858578" elapsed="0.146220"/>
+</kw>
+<kw name="Clicar em salvar novo" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${salvar}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:13:56.004798" elapsed="0.030187"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:13:56.034985" level="INFO">Clicking button 'id:save'.</msg>
+<arg>locator=${salvar}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:13:56.034985" elapsed="0.087820"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:56.004798" elapsed="0.118007"/>
+</kw>
+<kw name="Clicar em editar" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${editarDiretoria}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:13:56.123919" elapsed="0.030779"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:13:56.155726" level="INFO">Clicking button '(//button[@name='editar'][contains(.,'Editar')])[1]'.</msg>
+<arg>locator=${editarDiretoria}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:13:56.155726" elapsed="0.082108"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:56.123919" elapsed="0.113915"/>
+</kw>
+<kw name="Editar dados diretoria" owner="recursos">
+<kw name="Generate Random String" owner="String">
+<msg time="2024-07-16T14:13:56.238888" level="INFO">${palavra_randomica} = xaNlMGMG</msg>
+<var>${palavra_randomica}</var>
+<arg>length=8</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-07-16T14:13:56.238888" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2024-07-16T14:13:56.238888" level="INFO">${palavra_randomica} = xanlmgmg</msg>
+<var>${palavra_randomica}</var>
+<arg>${palavra_randomica}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2024-07-16T14:13:56.238888" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-07-16T14:13:56.239896" level="INFO">${board&amp;} = xanlmgmg</msg>
+<arg>${board&amp;}</arg>
+<arg>${palavra_randomica}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-07-16T14:13:56.238888" elapsed="0.001008"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${editarDadosDiretoria}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:13:56.239896" elapsed="0.014705"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:13:56.255607" level="INFO">Typing text 'xanlmgmg' into text field '//input[contains(@class,'MuiInputBase-input MuiInput-input css-mnn31')]'.</msg>
+<arg>locator=${editarDadosDiretoria}</arg>
+<arg>text=${board&amp;}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:13:56.255607" elapsed="0.117964"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:56.237834" elapsed="0.135737"/>
+</kw>
+<kw name="Clicar em salvar alterações" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${salvarAlterações}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:13:56.373571" elapsed="0.024789"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:13:56.399365" level="INFO">Clicking button '//button[@type='submit'][contains(.,'SALVAR ALTERAÇOES')]'.</msg>
+<arg>locator=${salvarAlterações}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:13:56.399365" elapsed="0.078693"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:56.373571" elapsed="0.104487"/>
+</kw>
+<kw name="Clicar em sair" owner="recursos">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${sair}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:13:56.479157" elapsed="0.017152"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:13:56.497314" level="INFO">Clicking button '//button[@class='css-1nvbq2d'][contains(.,'Logout')]'.</msg>
+<arg>locator=${sair}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:13:56.497314" elapsed="0.386367"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:56.479157" elapsed="0.405530"/>
+</kw>
+<kw name="Fechar o navegador" owner="recursos" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-16T14:13:56.884687" elapsed="3.630671"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:56.884687" elapsed="3.630671"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:13:44.797088" elapsed="15.719290"/>
+</test>
+<status status="PASS" start="2024-07-16T14:13:44.592337" elapsed="15.924562"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Diretoria">Diretoria</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
