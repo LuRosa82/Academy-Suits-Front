@@ -57,7 +57,7 @@ code .
 robot -d result ./tests/
 ```
 ## Resultados 
-![alt text](<Captura de Tela (240).png>)
+
  
  
 
