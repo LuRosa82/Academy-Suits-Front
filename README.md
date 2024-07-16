@@ -28,13 +28,13 @@ Dentro da pasta criada dê o git clone.
  
 ### Clone do projeto
 ```jsx
-git clone github.com/57Renata/Quality_Eagles-Academy-Front-robot.git
+git clone github.com/LuRosa82/Suits-Academy-Front-robot.git
 ```
 
 ### Entre no diretorio
  
 ```jsx
-cd Quality_Eagles-Academy-Front-robot
+cd Suits-Academy-Front-robot
 ```
  
 ### Entre no vscode
