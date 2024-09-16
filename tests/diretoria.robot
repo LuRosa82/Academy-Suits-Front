@@ -1,6 +1,6 @@
 *** Settings ***
-Resource            ../resources/recursos.resource
-Resource            ../resources/variaveis.resource
+Resource            ../resources/tests.resource
+Resource            ../resources/variables.resource
 Test Setup          Abrir o navegador
 Test Teardown       Fechar o navegador    
 
@@ -9,7 +9,7 @@ Teste 1: Cadastro de diretoria
     Acessar a página de login QaCodersAcademy
     Digitar um e-mail
     Digitar uma senha
-    Clicar em entrar
+	Clicar em entrar
     Clicar em cadastro
     Clicar em diretorias
     Clicar em novo cadastro 
@@ -19,5 +19,3 @@ Teste 1: Cadastro de diretoria
     Editar dados diretoria
     Clicar em salvar alterações
     Clicar em sair
-
-
